@@ -5,6 +5,7 @@ body {
     width: 100%;
     background-color: #000000;
     overflow: hidden;
+    font-family: oxygen;
 }
 
 #background {
@@ -19,7 +20,12 @@ body {
     height: 100%;
 }
 
-#p1 {
+.middle {
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    top: calc(50% - 175px);
+    left: calc(50% - 200px);
 }
 
 #p2 .middle {
@@ -56,17 +62,6 @@ body {
     z-index: 3;
 }
 
-#p3 {
-}
-
-.middle {
-    position: absolute;
-    width: 400px;
-    height: 350px;
-    top: calc(50% - 175px);
-    left: calc(50% - 200px);
-}
-
 #profilepic  {
     border: solid 1px black;
     background: url('profilepic.png') center / cover;
@@ -79,6 +74,7 @@ body {
 #bigtext p{
     position: absolute;
     width: 400px;
+    height: 50%;
     margin-top: 320px;
     text-align: center;
     font-size: 42px;
@@ -106,7 +102,7 @@ body {
 #side-l {
     position: fixed;
     background: linear-gradient(to right, rgba(0,0,0,1), rgba(255,255,255,0));
-    width: 5%;
+    width: 2%;
     height: 100%;
     z-index: 1;
 }
@@ -114,10 +110,43 @@ body {
 #side-r {
     position: fixed;
     background: linear-gradient(to left, rgba(0,0,0,1), rgba(255,255,255,0));
-    width: 5%;
+    width: 2%;
     height: 100%;
     right: 0;
     z-index: 1;
+}
+
+.textbox {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+    top: 0;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.textbox h1{
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    top: 5%;
+    left: 10%;
+    margin: auto;
+    color: white;
+    font-size: 42px;
+    text-align: center;
+}
+
+.textbox p{
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    top: 15%;
+    left: 10%;
+    margin: auto;
+    color: white;
+    font-size: 18px;
 }
 
 .buttons {
@@ -135,6 +164,7 @@ body {
     width: 50px;
     border: 0;
     cursor: pointer;
+    outline:none
 }
 
 #up {
